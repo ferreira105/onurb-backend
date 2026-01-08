@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: onurb-backend
+    env: node
+    plan: starter
+    buildCommand: npm install && npm run migrate
+    startCommand: npm start
